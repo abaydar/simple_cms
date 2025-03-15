@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  root 'demo#index'
-  
+  root "demo#index"
+
   # #simple match route
   get "demo/index"
-  get 'demo/hello'
+  get "demo/hello"
+  get "demo/about"
+  get "demo/contact"
 
-  #default route
-  get ':controller(/:action(/:id))'
+  # default route
+  # get ":controller(/:action(/:id))"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

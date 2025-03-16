@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema[8.0].define(version: 2025_03_15_213325) do
   create_table "pages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "subject_id"
+    t.bigint "subject_id"
     t.string "name"
     t.string "permalink"
     t.integer "position"
@@ -26,7 +26,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_15_213325) do
   create_table "subjects", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.integer "position"
-    t.boolean "visibile"
+    t.boolean "visible"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
